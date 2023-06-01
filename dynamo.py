@@ -1,7 +1,7 @@
 import boto3
 import os
 
-os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
+#os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
 dynamodb = boto3.client('dynamodb', endpoint_url='http://localhost:8000', region_name='us-west-2')
 dynamodb = boto3.resource('dynamodb', endpoint_url='http://localhost:8000')
 
